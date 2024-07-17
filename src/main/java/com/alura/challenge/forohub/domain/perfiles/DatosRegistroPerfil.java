@@ -1,4 +1,7 @@
 package com.alura.challenge.forohub.domain.perfiles;
 
-public record DatosRegistroPerfil() {
+import jakarta.validation.constraints.NotBlank;
+
+public record DatosRegistroPerfil(@NotBlank
+                                  String nombre) {
 }
