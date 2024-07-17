@@ -1,6 +1,8 @@
 package com.alura.challenge.forohub.controller;
 
+import com.alura.challenge.forohub.domain.respuestas.DatosActualizarRespuesta;
 import com.alura.challenge.forohub.domain.respuestas.DatosListadoRespuestas;
+import com.alura.challenge.forohub.domain.respuestas.DatosRegistroRespuestas;
 import com.alura.challenge.forohub.domain.respuestas.RespuestaService;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
@@ -20,7 +22,7 @@ public class RespuestaController {
     private RespuestaService respuestaService;
 
     @PostMapping
-    public ResponseEntity<DatosListadoRespuestas> agregarRespuesta(@RequestBody @Valid DatosRegistroRespuesta datosRegistroRespuesta) {
+    public ResponseEntity<DatosListadoRespuestas> agregarRespuesta(@RequestBody @Valid DatosRegistroRespuestas datosRegistroRespuesta) {
 
         DatosListadoRespuestas datosListadoRespuestas = respuestaService.agregarRespuesta(datosRegistroRespuesta);
         return ResponseEntity.ok(datosListadoRespuestas);

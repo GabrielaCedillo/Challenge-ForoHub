@@ -5,6 +5,7 @@ import com.alura.challenge.forohub.domain.cursos.ICursoRepository;
 import com.alura.challenge.forohub.domain.respuestas.DTopicoRespuestas;
 import com.alura.challenge.forohub.domain.usuarios.IUsuarioRepository;
 import com.alura.challenge.forohub.domain.usuarios.Usuario;
+import com.alura.challenge.forohub.utils.error.ErrorDeConsulta;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

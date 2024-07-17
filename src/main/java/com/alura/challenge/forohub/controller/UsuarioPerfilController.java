@@ -13,8 +13,7 @@ import java.util.List;
 
 @RestController
 @ResponseBody
-@RequestMapping
-@SecurityRequirement("/usuarioperfil")
+@RequestMapping("/usuarioperfil")
 @SecurityRequirement(name = "bearer-key")
 public class UsuarioPerfilController {
     @Autowired

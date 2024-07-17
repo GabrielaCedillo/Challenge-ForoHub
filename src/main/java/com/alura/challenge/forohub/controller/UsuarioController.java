@@ -1,9 +1,6 @@
 package com.alura.challenge.forohub.controller;
 
-import com.alura.challenge.forohub.domain.usuarios.DatosListadoUsuario;
-import com.alura.challenge.forohub.domain.usuarios.DatosRegistroUsuario;
-import com.alura.challenge.forohub.domain.usuarios.IUsuarioRepository;
-import com.alura.challenge.forohub.domain.usuarios.Usuario;
+import com.alura.challenge.forohub.domain.usuarios.*;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;

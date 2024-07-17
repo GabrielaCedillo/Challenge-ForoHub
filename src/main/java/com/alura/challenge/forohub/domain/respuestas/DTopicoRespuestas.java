@@ -6,7 +6,7 @@ public record DTopicoRespuestas(String mensaje,
                                 LocalDateTime fecha,
                                 String nombre,
                                 Boolean solucion) {
-    public DTOpicoRespuestas(Respuesta respuesta) {
+    public DTopicoRespuestas(Respuesta respuesta) {
         this(respuesta.getMensaje(), respuesta.getFecha(), respuesta.getUsuario().getNombre(), respuesta.getSolucion());
     }
 }

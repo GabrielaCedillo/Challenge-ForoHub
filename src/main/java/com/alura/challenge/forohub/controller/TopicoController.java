@@ -1,7 +1,9 @@
 package com.alura.challenge.forohub.controller;
 
 import com.alura.challenge.forohub.domain.respuestas.DTopicoRespuestas;
+import com.alura.challenge.forohub.domain.topicos.DatosActualizarTopico;
 import com.alura.challenge.forohub.domain.topicos.DatosListadoTopico;
+import com.alura.challenge.forohub.domain.topicos.DatosRegistroTopico;
 import com.alura.challenge.forohub.domain.topicos.TopicoService;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;

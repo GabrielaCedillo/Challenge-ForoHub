@@ -4,6 +4,7 @@ import com.alura.challenge.forohub.domain.perfiles.IPerfilRepository;
 import com.alura.challenge.forohub.domain.perfiles.Perfil;
 import com.alura.challenge.forohub.domain.usuarios.IUsuarioRepository;
 import com.alura.challenge.forohub.domain.usuarios.Usuario;
+import com.alura.challenge.forohub.utils.error.ErrorDeConsulta;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
