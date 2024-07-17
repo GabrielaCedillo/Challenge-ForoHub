@@ -36,13 +36,13 @@ public class PerfilController {
     }
     @GetMapping
     public ResponseEntity<Page<DatosListadoPerfil>> mostrarPerfil(@PageableDefault(size = 10) Pageable pageable) {
-        Page<DatosListadoPerfil> listadoPerfils = perfilRespository.findAll(pageable).map(DatosListadoPerfil::new);
+        Page<DatosListadoPerfil> listadoPerfils = perfilRepository.findAll(pageable).map(DatosListadoPerfil::new);
         return ResponseEntity.ok(listadoPerfils);
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<DatosListadoPerfil> muestraPerfil(@PathVariable Long id) {
-        Perfil perfil = perfilRespository.getReferenceById(id);
+        Perfil perfil = perfilRepository.getReferenceById(id);
         DatosListadoPerfil datosListadoPerfil = new DatosListadoPerfil(
                 perfil.getId(),
                 perfil.getNombre()

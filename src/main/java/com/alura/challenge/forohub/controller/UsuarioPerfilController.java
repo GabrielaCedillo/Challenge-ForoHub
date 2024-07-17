@@ -1,8 +1,8 @@
 package com.alura.challenge.forohub.controller;
 
-import com.alura.challenge.forohub.domain.usuario_perfil.DatosListadoUsuarioPerfil;
-import com.alura.challenge.forohub.domain.usuario_perfil.DatosRegistroUsuarioPerfil;
-import com.alura.challenge.forohub.domain.usuario_perfil.UsuarioPerfilService;
+import com.alura.challenge.forohub.domain.usuarioPerfil.DatosListadoUsuarioPerfil;
+import com.alura.challenge.forohub.domain.usuarioPerfil.DatosRegistroUsuarioPerfil;
+import com.alura.challenge.forohub.domain.usuarioPerfil.UsuarioPerfilService;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

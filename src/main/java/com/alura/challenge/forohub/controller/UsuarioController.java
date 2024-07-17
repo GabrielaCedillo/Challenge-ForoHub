@@ -13,10 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.alura.challenge.forohub.domain.usuario_perfil.DatosListadoUsuarioPerfil;
-import com.alura.challenge.forohub.domain.usuario_perfil.DatosRegistroUsuarioPerfil;
-import com.alura.challenge.forohub.domain.usuario_perfil.UsuarioPerfilService;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -24,7 +20,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
-import java.util.List;
 
 @RestController
 @ResponseBody
